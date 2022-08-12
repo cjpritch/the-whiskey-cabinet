@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Post, User } = require('../../models');
+const { Post, User, Review } = require('../../models');
 
 // get all whiskeys posted in alphabetical order.../api/posts
 router.get('/', (req, res) => {
@@ -7,6 +7,14 @@ router.get('/', (req, res) => {
       attributes: ['id', 'name'],
       order: [['name', 'ASC']], 
       include: [
+        {
+          model: Review,
+          attributes:['id', 'rating', 'review_text', 'user_id', 'post_id', 'created_at'],
+          include: {
+            model: User,
+            attributes: ['username']
+          }
+        },
         {
           model: User,
           attributes: ['username']

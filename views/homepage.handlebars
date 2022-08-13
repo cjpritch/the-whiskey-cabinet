@@ -1,0 +1,11 @@
+<ol>
+  {{#each posts as |post|}}
+  <li>
+    <article>
+      <div>
+        <a href="/post/{{post.id}}">{{post.name}}</a>
+      </div>
+    </article>
+  </li>
+  {{/each}}
+</ol>

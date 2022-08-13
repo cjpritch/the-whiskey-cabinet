@@ -20,4 +20,9 @@ router.get('/', (req, res) => {
     });
 });
 
+// login/create an account page
+router.get('/login', (req, res) => {
+  res.render('login');
+});
+
 module.exports = router;

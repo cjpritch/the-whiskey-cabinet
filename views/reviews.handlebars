@@ -1,0 +1,27 @@
+<article class="post">
+  <div>
+    <a>{{post.name}}</a>
+  </div>
+</article>
+<form class="review-form">
+  <div>
+    <textarea name="review-body"></textarea>
+  </div>
+
+  <div>
+    <button type="submit">Create New Review</button>
+  </div>
+</form>
+
+<div class="reviews">
+  {{#each post.reviews}}
+  <section>
+    <div>
+      {{user.username}} on {{created_at}}
+    </div>
+    <div class="text">
+      {{review_text}}
+    </div>
+  </section>
+  {{/each}}
+</div>

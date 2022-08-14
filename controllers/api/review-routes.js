@@ -14,7 +14,6 @@ router.get('/', (req, res) => {
 // post a review.../api/reviews
 router.post('/', (req, res) => {
     Review.create({
-        rating: req.body.rating,
         review_text: req.body.review_text,
         user_id: req.body.user_id,
         post_id: req.body.post_id

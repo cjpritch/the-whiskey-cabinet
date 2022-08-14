@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
       include: [
         {
           model: Review,
-          attributes:['id', 'rating', 'review_text', 'user_id', 'post_id', 'created_at'],
+          attributes:['id', 'review_text', 'user_id', 'post_id', 'created_at'],
           include: {
             model: User,
             attributes: ['username']

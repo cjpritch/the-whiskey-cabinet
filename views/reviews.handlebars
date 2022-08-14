@@ -3,6 +3,7 @@
     <a>{{post.name}}</a>
   </div>
 </article>
+{{#if loggedIn}}
 <form class="review-form">
   <div>
     <textarea name="review-body"></textarea>
@@ -12,7 +13,7 @@
     <button type="submit">Create New Review</button>
   </div>
 </form>
-
+{{/if}}
 <div class="reviews">
   {{#each post.reviews}}
   <section>
@@ -25,3 +26,6 @@
   </section>
   {{/each}}
 </div>
+{{#if loggedIn}}
+<script src="/javascript/review.js"></script>
+{{/if}}

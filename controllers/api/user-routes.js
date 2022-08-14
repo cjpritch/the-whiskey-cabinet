@@ -24,7 +24,7 @@ router.get('/:id', (req, res) => {
     include: [
       {
         model: Review,
-        attributes: ['id', 'rating', 'review_text', 'created_at'],
+        attributes: ['id', 'review_text', 'created_at'],
         include: {
           model: Post,
           attributes: ['name']

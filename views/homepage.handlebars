@@ -9,3 +9,17 @@
   </li>
   {{/each}}
 </ol>
+
+{{#if loggedIn}}
+<section>
+  <h2>Add a Whiskey to the Cabinet</h2>
+  <form class="new-post-form">
+    <div>
+      <label for="post-name">Name</label>
+      <input type="text" id="post-name" name="post-name" />
+    </div>
+    <button type="submit" class="btn">Add</button>
+  </form>
+</section>
+{{/if}}
+<script src="/javascript/add-post.js"></script>

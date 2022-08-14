@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { Review } = require('../../models');
+const withAuth = require('../../utils/auth');
 
 // get all reviews.../api/reviews 
 router.get('/', (req, res) => {
@@ -28,7 +29,7 @@ router.post('/', (req, res) => {
 });
 
 // delete a review.../api/reviews/:id
-router.delete('/:id', (req, res) => {
+router.delete('/:id', withAuth, (req, res) => {
     Review.destroy({
       where: {
         id: req.params.id

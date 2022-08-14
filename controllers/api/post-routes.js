@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { Post, User, Review } = require('../../models');
+const withAuth = require('../../utils/auth');
 
 // get all whiskeys posted in alphabetical order.../api/posts
 router.get('/', (req, res) => {
@@ -54,7 +55,7 @@ router.get('/', (req, res) => {
       });
   });
 // post a new whiskey.../api/posts
-  router.post('/', (req, res) => {
+  router.post('/', withAuth, (req, res) => {
     Post.create({
       name: req.body.name,
       user_id: req.session.user_id
@@ -66,7 +67,7 @@ router.get('/', (req, res) => {
       });
   });
 // update a whiskey name.../api/posts/:id
-  router.put('/:id', (req, res) => {
+  router.put('/:id', withAuth, (req, res) => {
     Post.update(
       {
         name: req.body.name
@@ -90,7 +91,7 @@ router.get('/', (req, res) => {
       });
   });
 // delete a whiskey.../api/posts/:id
-  router.delete('/:id', (req, res) => {
+  router.delete('/:id', withAuth, (req, res) => {
     Post.destroy({
       where: {
         id: req.params.id

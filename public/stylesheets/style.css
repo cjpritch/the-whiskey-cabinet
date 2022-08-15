@@ -1,1 +1,10 @@
 /* BULMA CSS GOES HERE */
+
+@charset "utf-8";
+@import "../../node_modules/bulma/css/bulma.min.css";
+
+h1 {
+   color: red;
+   font-size: 50px;
+   background-color: aqua;
+}

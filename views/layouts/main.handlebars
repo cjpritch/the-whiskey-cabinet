@@ -1,35 +1,37 @@
-<!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Whiskey Cabinet</title>
-  <link rel="stylesheet" href="../../public/stylesheets/style.css">
-</head>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>The Whiskey Cabinet</title>
+      <link rel="stylesheet" href="/stylesheets/style.css" />
+   </head>
 
-<body>
-  <div>
-     <header>
-    <h1>
-      <a href="/">The Whiskey Cabinet</a>
-    </h1>
-    <nav>
-  {{#if loggedIn}}
-  <button id="logout" class="btn-no-style">Logout</button>
-  {{else}}
-  <a href="/login">Login</a>
-  {{/if}}
-</nav>
-  </header>
+   <body>
+      <div>
+         <header class="hero is-fullheight">
 
-    <main>
-      {{{ body }}}
-    </main>
-  </div>
-  {{#if loggedIn}}
-  <script src="/javascript/logout.js"></script>
-  {{/if}}
-</body>
+            <h1>
+               <a href="/">The Whiskey Cabinet</a>
+            </h1>
+            <nav>
+               {{#if loggedIn}}
+                  {{! <button id="logout" class="btn-no-style">Logout</button> }}
+                  <button id="logout" class="button is-success">Logout</button>
+               {{else}}
+                  <a href="/login">Login</a>
+               {{/if}}
+            </nav>
+         </header>
+
+         <main>
+            {{{body}}}
+
+         </main>
+      </div>
+      {{#if loggedIn}}
+         <script src="/javascript/logout.js"></script>
+      {{/if}}
+   </body>
 
 </html>

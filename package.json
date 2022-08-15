@@ -1,31 +1,33 @@
 {
-  "name": "the-whiskey-cabinet",
-  "version": "1.0.0",
-  "description": "",
-  "main": "(server.js)",
-  "scripts": {
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cjpritch/the-whiskey-cabinet.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/cjpritch/the-whiskey-cabinet/issues"
-  },
-  "homepage": "https://github.com/cjpritch/the-whiskey-cabinet#readme",
-  "dependencies": {
-    "bcrypt": "^5.0.1",
-    "bulma": "^0.9.4",
-    "connect-session-sequelize": "^7.1.4",
-    "dotenv": "^16.0.1",
-    "express": "^4.18.1",
-    "express-handlebars": "^6.0.6",
-    "express-session": "^1.17.3",
-    "mysql2": "^2.3.3",
-    "sequelize": "^6.21.3"
-  }
+   "name": "the-whiskey-cabinet",
+   "version": "1.0.0",
+   "description": "",
+   "main": "(server.js)",
+   "scripts": {
+      "start": "node server.js",
+      "test": "echo \"Error: no test specified\" && exit 1"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/cjpritch/the-whiskey-cabinet.git"
+   },
+   "author": "",
+   "license": "ISC",
+   "bugs": {
+      "url": "https://github.com/cjpritch/the-whiskey-cabinet/issues"
+   },
+   "homepage": "https://github.com/cjpritch/the-whiskey-cabinet#readme",
+   "dependencies": {
+      "bcrypt": "^5.0.1",
+      "connect-session-sequelize": "^7.1.4",
+      "dotenv": "^16.0.1",
+      "express": "^4.18.1",
+      "express-handlebars": "^6.0.6",
+      "express-session": "^1.17.3",
+      "mysql2": "^2.3.3",
+      "sequelize": "^6.21.3"
+   },
+   "devDependencies": {
+      "bulma": "^0.9.4"
+   }
 }

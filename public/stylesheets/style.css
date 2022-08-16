@@ -1,7 +1,8 @@
 /* BULMA CSS GOES HERE */
 body {
    width: 100%;
-align-items: center;
+   align-items: center;
+   background-image: url(../assets_images/whiskey-image1.jpg);
 }
 
 @import "./node_modules/bulma/css/bulma.min.css";
@@ -13,13 +14,23 @@ align-items: center;
 .navbar {
    width: 100%;
 }
-
-body {
-   background-image: url(../assets_images/whiskey-image1.jpg);
+/* homepage */
+.homepage-container {
+   width: 30%;
+   color: antiquewhite;
+   align-items: left;
+   border: black;
+   margin-top: 50px;
+   margin-left: 2%;
+   padding-left: 2%;
+   font-size: 20pt;
+}
+#add-new-whisky {
+   margin-top: 30px;
 }
 
 .reviews {
-   margin-left: 20px;
+   margin-left: 25px;
 }
 
 .review-section {
@@ -29,6 +40,7 @@ body {
    margin-left: 2%;
    padding-left: 2%;
    font-size: 20pt;
+   border: 10px;
 }
 
 #create-review-bttn {

@@ -1,1 +1,56 @@
 /* BULMA CSS GOES HERE */
+body {
+   width: 100%;
+   align-items: center;
+   background-image: url(../assets_images/whiskey-image1.jpg);
+}
+
+@import "./node_modules/bulma/css/bulma.min.css";
+.navbar-brand {
+   font-size: 50pt;
+   font-weight: bolder;
+   font-family: fantasy;
+}
+.navbar {
+   width: 100%;
+}
+/* homepage */
+.homepage-container {
+   width: 30%;
+   color: antiquewhite;
+   align-items: left;
+   border: black;
+   margin-top: 50px;
+   margin-left: 2%;
+   padding-left: 2%;
+   font-size: 20pt;
+}
+#add-new-whisky {
+   margin-top: 30px;
+}
+
+.reviews {
+   margin-left: 25px;
+}
+
+.review-section {
+   width: 40%;
+   align-items: left;
+   border: black;
+   margin-left: 2%;
+   padding-left: 2%;
+   font-size: 20pt;
+   border: 10px;
+}
+
+#create-review-bttn {
+   font-size: 25pt;
+}
+
+.reviews {
+   margin-bottom: 100px;
+}
+#new-review-bttn {
+   margin-top: 10px;
+   padding: 2px;
+}

@@ -1,31 +1,76 @@
-<form class="login-form">
-  <div>
-      <h1>Log In</h1>
-    <label for="username-login">username:</label>
-    <input type="text" id="username-login" />
-  </div>
-  <div>
-    <label for="password-login">password:</label>
-    <input type="password" id="password-login" />
-  </div>
-  <div>
-    <button type="submit">Login</button>
-  </div>
+
+<form class="login-form">    
+  <div class="hero-body">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-5-tablet is-4-desktop is-3-widescreen">
+                        <form action="" class="box">
+                            <div class="field">
+                                <h1>Log In</h1>
+                                <label for="username-login" class="label">Username</label>
+                                <div class="control has-icons-left">
+                                    <input type="text" id="username-login" placeholder="e.g. bobsmith" class="input" required>
+                                    <span class="icon is-small is-left">
+                                        <i class="fa fa-envelope"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="password-login" class="label">Password</label>
+                                <div class="control has-icons-left">
+                                    <input type="password" id="password-login" placeholder="*******" class="input" required>
+                                    <span class="icon is-small is-left">
+                                        <i class="fa fa-lock"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="" class="checkbox">
+                                    <input type="checkbox">Remember me</label>
+                            </div>
+                            <div class="field">
+                                <button class="button is-success" type="submit"> Login </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
 </form>
 <h2>Or</h2>
 <form class="signup-form">
-  <div>
-      <h1>Sign Up</h1>
-    <label for="username-signup">username:</label>
-    <input type="text" id="username-signup" />
-  </div>
-  <div>
-    <label for="password-signup">password:</label>
-    <input type="password" id="password-signup" />
-  </div>
-  <div>
-    <button type="submit">Create Account</button>
-  </div>
+  <div class="hero-body">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-5-tablet is-4-desktop is-3-widescreen">
+                        <form action="" class="box">
+                            <div class="field">
+                                <h1>Sign Up</h1>
+                                <label for="username-signup" class="label">Username</label>
+                                <div class="control has-icons-left">
+                                    <input type="text" id="username-signup" placeholder="e.g. bobsmith" class="input" required>
+                                    <span class="icon is-small is-left">
+                                        <i class="fa fa-envelope"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="password-signup" class="label">Password</label>
+                                <div class="control has-icons-left">
+                                    <input type="password" id="password-signup" placeholder="*******" class="input" required>
+                                    <span class="icon is-small is-left">
+                                        <i class="fa fa-lock"></i>
+                                    </span>
+                                </div>
+                            </div>                            
+                            <div class="field">
+                                <button class="button is-success" type="submit"> Create Account </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
 </form>
 
 <script src="/javascript/login.js"></script>

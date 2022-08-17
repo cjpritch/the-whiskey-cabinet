@@ -1,25 +1,30 @@
-{{#if loggedIn}}
-<ol>
-  {{#each posts as |post|}}
-  <li>
-    <article>
-      <div>
-        <a href="/post/{{post.id}}">{{post.name}}</a>
-      </div>
-    </article>
-  </li>
-  {{/each}}
-</ol>
 
-<section>
-  <h2>Add a Whiskey to the Cabinet</h2>
-  <form class="new-post-form">
-    <div>
-      <label for="post-name">Name</label>
-      <input type="text" id="post-name" name="post-name" />
-    </div>
-    <button type="submit" class="btn">Add</button>
-  </form>
-</section>
-{{/if}}
-<script src="/javascript/add-post.js"></script>
+{{#if loggedIn}}
+<div class="homepage-container" id="homepage-left-column">
+   <div class="is-size-2 is-underlined"></div>
+   <ol>
+      {{#each posts as |post|}}
+         <li>
+            <article>
+               <div>
+                  <a href="/post/{{post.id}}">{{post.name}}</a>
+               </div>
+            </article>
+         </li>
+      {{/each}}
+   </ol>
+      <section id="add-new-whisky">
+         <h2>Add a Whiskey to the Cabinet</h2>
+         <form class="new-post-form">
+            <div>
+               <label for="post-name">Name:</label>
+               <input type="text" id="post-name" name="post-name" class="input is-small" size="10" />
+            </div>
+            <button class="button is-success btn" type="submit">Add</button>
+         </form>
+      </section>
+   {{/if}}
+   <script src="/javascript/add-post.js"></script>
+
+</div>
+

@@ -4,11 +4,13 @@ const { Post, User, Review } = require('../models');
 
 // displays whiskeys on the homepage 
 router.get('/', (req, res) => {
+  console.log("2");
   Post.findAll({
     attributes: [
       'name',
       'id'
     ],
+    order: [['name', 'ASC']], 
     
   })
     .then(dbPostData => {

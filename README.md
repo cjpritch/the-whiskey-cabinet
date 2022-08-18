@@ -11,7 +11,7 @@
 
 <h2>Description</h2>
 
-<p>The Whiskey Cabinet is a simple, easy to use, appliction that helps connect whiskey enthusiasts. When entering the website the user will be prompted to either login in, or create an account. After being logged in the user can browse all of the previously reviewed whiskeys. New reviews can also be made at anytime and will then be availible for the world to see.</p>
+<p>The Whiskey Cabinet is a simple, easy to use, appliction that helps connect whiskey enthusiasts. When entering the website the user will be prompted to either login in, or create an account. After being logged in the user can browse all of the previously reviewed whiskeys. New reviews can also be made at anytime and will then be available for the world to see.</p>
 
 <h2>Installation</h2>
 <p>Just go to the website, create an account, and start reviewing!</p>
@@ -20,6 +20,7 @@
 <p>Gives a platform for people who are interested in whiskey a place to collectively share their thoughts.</p>
 
 <h2>Technologies Used</h2>
+
 - Html
 - CSS/Bulma
 - Javascript
@@ -33,9 +34,9 @@
 
 <h2>Contributers</h2>
 
-- Carly Pritchard: [cjpritch](https://github.com/cjpritch)
-- Shom Bhandari: [spbhanda](https://github.com/spbhanda)
-- Ian Bridges: [ianbridges](https://github.com/ianbridges)
+- [Carly Pritchard](https://github.com/cjpritch)
+- [Shom Bhandari](https://github.com/spbhanda)
+- [Ian Bridges](https://github.com/ianbridges)
 
 <h2>Website</h2>
 

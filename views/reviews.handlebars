@@ -1,34 +1,34 @@
-<div class="review-section has-text-light is-size-4">
-   
+<div class="review-section"> 
    <article class="post">
-      <div class="reivew-lists is-size-3">
-         <a>{{post.name}}:</a>
+      <div class="reivew-lists">
+         <a class="single-review-name">{{post.name}}:</a>
       </div>
    </article>
 
    <div class="reviews">
       {{#each post.reviews}}
-         <section>
+         <section class="single-review opaque">
             <div>
                {{user.username}}
                on
-               {{format_date created_at}}
+               {{format_date created_at}}:
             </div>
             <div class="text">
                {{review_text}}
             </div>
          </section>
+         <br>
       {{/each}}
    </div>
 
    {{#if loggedIn}}
       <form class="review-form">
          <div>
-            <textarea class="input is-large" name="review-body"></textarea>
+            <textarea class="input" name="review-body"></textarea>
          </div>
-
+<br>
          <div>
-            <button id="new-review-bttn" class="button is-success is-large" type="submit">Create New Review</button>
+            <button id="new-review-bttn" class="button" type="submit"><span class="button-title">New Review</span></button>
          </div>
       </form>
    {{/if}}

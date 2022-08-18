@@ -1,56 +1,94 @@
-/* BULMA CSS GOES HERE */
-body {
-   width: 100%;
-   align-items: center;
-   background-image: url(../assets_images/whiskey-image1.jpg);
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+html {
+   background: url(../assets/images/wood.jpg) no-repeat center center fixed;
+   background-size: cover;
 }
 
-@import "./node_modules/bulma/css/bulma.min.css";
-.navbar-brand {
-   font-size: 50pt;
-   font-weight: bolder;
-   font-family: fantasy;
-}
-.navbar {
-   width: 100%;
-}
-/* homepage */
-.homepage-container {
-   width: 30%;
+#title {
+   font-size: 5vw;
+   font-family: 'Lobster', 'cursive';
    color: antiquewhite;
-   align-items: left;
-   border: black;
-   margin-top: 50px;
-   margin-left: 2%;
-   padding-left: 2%;
-   font-size: 20pt;
-}
-#add-new-whisky {
-   margin-top: 30px;
 }
 
-.reviews {
-   margin-left: 25px;
+.navbar {
+   background-color: transparent;
+}
+
+.button {
+   color: antiquewhite;
+}
+
+.button-title {
+   color: rgb(26, 13, 0);
+   font-weight: bold;
+}
+
+.login-form {
+   padding-top: 3em;
+}
+
+h1 {
+   font-size: 2em;
+   color: antiquewhite;
+   font-weight: bold;
+   font-family: 'Roboto Slab';
+}
+
+.label {
+   color: antiquewhite;
+}
+
+ul {
+   padding-top: 2em;
+   padding-left: 5em;
+}
+
+li {
+   font-family: 'Roboto Slab';
+}
+
+.whiskey {
+   color: antiquewhite;
+   font-size: 2vw;
+}
+
+h2 {
+   font-family: 'Roboto Slab';
+   color: antiquewhite;
+   font-weight: bold;
+   font-size: 2vw;
+}
+
+.previous {
+   padding: 7em;
+}
+
+.new {
+   padding: 7em;
 }
 
 .review-section {
-   width: 40%;
-   align-items: left;
-   border: black;
-   margin-left: 2%;
-   padding-left: 2%;
-   font-size: 20pt;
-   border: 10px;
+   padding: 5em;
 }
 
-#create-review-bttn {
-   font-size: 25pt;
+.single-review {
+   font-family: 'Roboto Slab';
+   border: 2px solid antiquewhite;
+   border-radius: 5px;
+   color: antiquewhite;
+   font-size: 2vw;
+   padding: 3vw; 
+   font-weight: bold;
+}
+.single-review-name {
+   font-family: 'Roboto Slab';
+   color: antiquewhite;
+   font-weight: bold;
+   font-size: 3vw;
 }
 
-.reviews {
-   margin-bottom: 100px;
-}
-#new-review-bttn {
-   margin-top: 10px;
-   padding: 2px;
+.opaque {
+   background-color: rgb(153, 102, 51);
+   opacity: 0.5;
 }

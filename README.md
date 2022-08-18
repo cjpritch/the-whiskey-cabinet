@@ -23,13 +23,13 @@
 - Html
 - CSS/Bulma
 
-<h2>Contributers with GitHub Links</h2>
+<h2>Contributers</h2>
 
 - Carly Pritchard: [cjpritch](https://github.com/cjpritch)
 - Shom Bhandari: [spbhanda](https://github.com/spbhanda)
 - Ian Bridges: [ianbridges](https://github.com/ianbridges)
 
-<h2>Contributers with GitHub Links</h2>
+<h2>Website</h2>
 
 [Link](https://the-whiskey-cabinet.herokuapp.com/)
 

@@ -1,33 +1,39 @@
-<article class="post">
-  <div>
-    <a>{{post.name}}</a>
-  </div>
-</article>
+<div class="review-section"> 
+   <article class="post">
+      <div class="reivew-lists">
+         <a class="single-review-name">{{post.name}}:</a>
+      </div>
+   </article>
 
-<div class="reviews">
-  {{#each post.reviews}}
-  <section>
-    <div>
-      {{user.username}} on {{format_date created_at}}
-    </div>
-    <div class="text">
-      {{review_text}}
-    </div>
-  </section>
-  {{/each}}
+   <div class="reviews">
+      {{#each post.reviews}}
+         <section class="single-review opaque">
+            <div>
+               {{user.username}}
+               on
+               {{format_date created_at}}:
+            </div>
+            <div class="text">
+               {{review_text}}
+            </div>
+         </section>
+         <br>
+      {{/each}}
+   </div>
+
+   {{#if loggedIn}}
+      <form class="review-form">
+         <div>
+            <textarea class="input" name="review-body"></textarea>
+         </div>
+<br>
+         <div>
+            <button id="new-review-bttn" class="button" type="submit"><span class="button-title">New Review</span></button>
+         </div>
+      </form>
+   {{/if}}
+   {{#if loggedIn}}
+      <script src="/javascript/review.js"></script>
+   {{/if}}
+
 </div>
-
-{{#if loggedIn}}
-<form class="review-form">
-  <div>
-    <textarea name="review-body"></textarea>
-  </div>
-
-  <div>
-    <button type="submit">Create New Review</button>
-  </div>
-</form>
-{{/if}}
-{{#if loggedIn}}
-<script src="/javascript/review.js"></script>
-{{/if}}

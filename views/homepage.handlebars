@@ -1,25 +1,32 @@
 {{#if loggedIn}}
-<ol>
-  {{#each posts as |post|}}
-  <li>
-    <article>
-      <div>
-        <a href="/post/{{post.id}}">{{post.name}}</a>
-      </div>
-    </article>
-  </li>
-  {{/each}}
-</ol>
-
-<section>
-  <h2>Add a Whiskey to the Cabinet</h2>
-  <form class="new-post-form">
-    <div>
-      <label for="post-name">Name</label>
-      <input type="text" id="post-name" name="post-name" />
-    </div>
-    <button type="submit" class="btn">Add</button>
-  </form>
-</section>
+<div class="columns">
+<div class="previous column">
+   <h2>Previously Reviewed Whiskeys:</h2>
+   <ul>
+      {{#each posts as |post|}}
+         <li>
+            <article>
+               <div>
+                  <a href="/post/{{post.id}}"><span class="whiskey">{{post.name}}</span></a>
+               </div>
+            </article>
+         </li>
+      {{/each}}
+   </ul>
+</div>
+<div class="new column">
+      <section id="add-new-whisky">
+         <form class="new-post-form">
+            <h2>Add a Whiskey to the Cabinet</h2>
+            <div>
+               <label for="post-name"><span class="label">Name:</span></label>
+               <input type="text" id="post-name" name="post-name" class="input is-small" size="10" />
+            </div>
+            <br>
+            <button class="button btn" type="submit"><span class="button-title">Add</span></button>
+         </form>
+      </section>
+</div>
+</div>
+   <script src="/javascript/add-post.js"></script>
 {{/if}}
-<script src="/javascript/add-post.js"></script>

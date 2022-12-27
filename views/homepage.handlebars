@@ -1,7 +1,7 @@
-{{#if loggedIn}}
+
 <div class="columns">
 <div class="previous column">
-   <h2>Previously Reviewed Whiskeys:</h2>
+   <h2>Select a Reviewed Whiskey:</h2>
    <ul>
       {{#each posts as |post|}}
          <li>
@@ -14,6 +14,7 @@
       {{/each}}
    </ul>
 </div>
+{{#if loggedIn}}
 <div class="new column">
       <section id="add-new-whisky">
          <form class="new-post-form">

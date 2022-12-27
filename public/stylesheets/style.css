@@ -50,14 +50,18 @@ li {
 
 .whiskey {
    color: antiquewhite;
-   font-size: 2vw;
+   font-size: 3vw;
+}
+
+.whiskey:hover {
+   font-style: italic;
 }
 
 h2 {
    font-family: 'Roboto Slab';
    color: antiquewhite;
    font-weight: bold;
-   font-size: 2vw;
+   font-size: 4vw;
 }
 
 .previous {
@@ -85,7 +89,7 @@ h2 {
    font-family: 'Roboto Slab';
    color: antiquewhite;
    font-weight: bold;
-   font-size: 3vw;
+   font-size: 4vw;
 }
 
 .opaque {
